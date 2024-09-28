@@ -1,9 +1,8 @@
 import React from 'react'
 import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyleComponent';
-// import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
+import { DiCssdeck } from 'react-icons/di';
 import { Bio } from '../../data/constants';
-// import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
 
 const Navbar = () => {
@@ -13,10 +12,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
-          <Span>Jmusk@n..</Span>
-          {/* <a href='#' style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Jmusk@n..</Span>
-          </a> */}
+        <DiCssdeck size="3rem" /><Span style={{ display: "flex", alignItems: "center", color: "purple", marginBottom: '20;', cursor: 'pointer' }}>Jmusk@n..</Span>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
